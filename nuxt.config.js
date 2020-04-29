@@ -34,6 +34,15 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  // nuxt.config.js
+
+  modules: [
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/bulma'
+  ]
 }
 

@@ -1,41 +1,43 @@
 <template>
-  <section class="container">
+  <section class="container-fluid">
     <div>
+      <navbar/>
       <app-logo/>
       <h1 class="title">
-        pwa-nuxt
+        Tugas PWA
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        PWA TheMealDB
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
     </div>
+    <Categories/>
+    <Meals/>
+    <Area/>
+    <Refs/>
+    <p class="footer">&copy;2020 | Building with Nuxt.js</p>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Navbar from '~/components/Navbar.vue'
+import Area from '~/components/Area.vue'
+import Categories from '~/components/Category.vue'
+import Meals from '~/components/Meals.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Navbar,
+    Area,
+    Categories,
+    Meals
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
+.container-fluid {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -55,11 +57,18 @@ export default {
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .links {
   padding-top: 15px;
+}
+
+.footer {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #526488;
 }
 </style>
 
