@@ -1,4 +1,5 @@
 # pwa-nuxt
+<<<<<<< HEAD
 
 > Nuxt.js project
 
@@ -21,3 +22,6 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+=======
+nuxt.js PWA
+>>>>>>> 7f509e13add4374c416a2115c6819bed96c0b640
